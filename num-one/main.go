@@ -2,7 +2,6 @@ package main
 
 import (
 	"gomicro-example/num-one/handler"
-	"gomicro-example/num-one/subscriber"
 	"gomicro-example/proto/numone"
 
 	"github.com/micro/go-micro/v2"
@@ -12,7 +11,7 @@ import (
 func main() {
 	// New Service
 	service := micro.NewService(
-		micro.Name("go.micro.srv.num"),
+		micro.Name("go.micro.srv.numone"),
 		micro.Version("latest"),
 	)
 
@@ -21,12 +20,6 @@ func main() {
 
 	// Register Handler
 	numone.RegisterNumHandler(service.Server(), new(handler.Num))
-
-	// Register Struct as Subscriber
-	micro.RegisterSubscriber("go.micro.srv.num", service.Server(), new(subscriber.Num))
-
-	// Register Function as Subscriber
-	micro.RegisterSubscriber("go.micro.srv.num", service.Server(), subscriber.Handler)
 
 	// Run service
 	if err := service.Run(); err != nil {
