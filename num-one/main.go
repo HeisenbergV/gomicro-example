@@ -1,9 +1,9 @@
 package main
 
 import (
-	"gomicro-exmple/num-one/handler"
-	"gomicro-exmple/num-one/subscriber"
-	"gomicro-exmple/proto/numone"
+	"gomicro-example/num-one/handler"
+	"gomicro-example/num-one/subscriber"
+	"gomicro-example/proto/numone"
 
 	"github.com/micro/go-micro/v2"
 	"github.com/micro/go-micro/v2/util/log"

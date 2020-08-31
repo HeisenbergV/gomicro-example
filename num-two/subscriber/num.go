@@ -3,7 +3,7 @@ package subscriber
 import (
 	"context"
 
-	num "gomicro-example/proto/num-two/num"
+	num "gomicro-example/proto/numtwo"
 )
 
 type Num struct{}

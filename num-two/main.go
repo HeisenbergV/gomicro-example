@@ -4,10 +4,10 @@ import (
 	"gomicro-example/num-two/handler"
 	"gomicro-example/num-two/subscriber"
 
-	"github.com/micro/v2/go-micro"
+	"github.com/micro/go-micro/v2"
 	"github.com/micro/go-micro/v2/util/log"
 
-	num "gomicro-example/proto/num-two/num"
+	num "gomicro-example/proto/numtwo"
 )
 
 func main() {

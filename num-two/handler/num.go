@@ -3,11 +3,11 @@ package handler
 import (
 	"context"
 
-	num "gomicro-example/proto/num-two"
+	num "gomicro-example/proto/numtwo"
 )
 
 type Num struct{}
 
-func (e *Num) Call(ctx context.Context, req *num.Request, rsp *num.Response) error {
+func (e *Num) GetNum(ctx context.Context, req *num.Request, rsp *num.Response) error {
 	return nil
 }
