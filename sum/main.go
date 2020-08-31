@@ -10,7 +10,6 @@ import (
 )
 
 func main() {
-	// New Service
 	service := micro.NewService(
 		micro.Name("go.micro.srv.sum"),
 		micro.Version("latest"),
